@@ -19,7 +19,7 @@ KD_model = 87.6%
 
 BERT-medium
 baseline = 89.0%
-KD_model =  89.56%
+KD_model = 89.56%
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 BERT-tiny with 500 examples
@@ -56,13 +56,6 @@ baseline = 76.7%
 KD_model = 78.9%
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-BERT-tiny with 5000 examples
-
-10 epochs
-baseline
-KD_model = 80.2%
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 BERT-mini with 1000 examples
 
 10 epochs
@@ -77,6 +70,42 @@ KD_model = 81%
 baseline = 78.9%
 KD_model = 81.3%
 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Knowledge Distillation using: T=4, soft_target_weight = 0.10, true_target_weight = 0.90 and cosine with restarts learning rate scheduler
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+KD on all compact BERT models family with 1000 examples and 10 epochs
+
+BERT-tiny
+baseline = 63.2%
+KD_model = 62%
+
+BERT-mini
+baseline = 76.2%
+KD_model = 75.9%
+
+BERT-small
+baseline = 87.8%
+KD_model = 87.6%
+
+BERT-medium
+baseline = 89%
+KD_model = 89.5%
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Knowledge Distillation using: T=4, soft_target_weight = 0.20, true_target_weight = 0.80 and cosine with restarts learning rate scheduler
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BERT-medium with 1000 examples
+
+10 epochs
+baseline = 89%
+KD_model = 89.5%
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Knowledge Distillation using: T=2, soft_target_weight = 0.50, true_target_weight = 0.50 and linear learning rate scheduler ***Same as speech recognition training in Hinton paper***
