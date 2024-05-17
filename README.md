@@ -8,14 +8,22 @@ in the context of fine-tuning pre-trained models. Specifically, the technique is
 
 ### BERT base model used as teacher
 bert-base-uncased: https://huggingface.co/google-bert/bert-base-uncased
-paper: https://arxiv.org/abs/1810.04805
 
 ### Compact BERT models used as students
 bert-medium: https://huggingface.co/prajjwal1/bert-medium
+
 bert-small: https://huggingface.co/prajjwal1/bert-small
+
 bert-mini: https://huggingface.co/prajjwal1/bert-mini
+
 bert-tiny: https://huggingface.co/prajjwal1/bert-tiny
-paper: https://arxiv.org/abs/1908.08962
 
 ## Dataset
-https://huggingface.co/datasets/SetFit/imdb
+SetFit/imdb on HuggingFace hub: https://huggingface.co/datasets/SetFit/imdb
+
+## Related Papers
+Knowledge distillation: https://arxiv.org/abs/1503.02531
+
+BERT: https://arxiv.org/abs/1810.04805
+
+BERT family: https://arxiv.org/abs/1908.08962
